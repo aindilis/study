@@ -1,0 +1,80 @@
+#!/usr/bin/perl -w
+
+use Study;
+
+$UNIVERSAL::study = Study->new
+  (Interviewers => {
+		    "Jarod Go" => "CTO",
+		    "Aron Hall" => "CEO",
+		   },
+   PedagogicalObjectives => {
+			     "openbsd install" => 1,
+			     "vpn" => 1,
+			     "802.11i" => 1,
+			     "802.11b" => 1,
+			     "wpa" => 1,
+			     "rsn" => 1,
+			     "peap" => 1,
+			     "802.1X" => 1,
+			     "windows file sharing (looking into samba protocols)" => 1,
+			     "traffic sniffing" => 1,
+			     "Autograph INTEL paper" => 1,
+			     "ISAKMP vpn implementation" => 1,
+			    },
+   SeedReadings => [
+		    {
+		     Title => "Overview of WPA/RSN/80211i",
+		     URL => "http://www.windowsecurity.com/articles/80211i-WPA-RSN-Wi-Fi-Security.html",
+		     Topics => {
+				"wpa" => 1,
+				"rsn" => 1,
+			       },
+		    },
+		    {
+		     Title => "EAP Methods Overview (MD5,TLS,TTLS,PEAP,etc...)",
+		     URL => "http://www.mtghouse.com/EAP_082404.pdf",
+		     Topics => {
+			       },
+		    },
+		    {
+		     Title => "Setting up WPA/EAP-TLS",
+		     URL => "http://www.rinta-aho.org/docs/wlan/wlan.html",
+		     Topics => {
+			       },
+		    },
+		    {
+		     Title => "Setting up 802.1x/Radius",
+		     URL => "http://tldp.org/HOWTO/html_single/8021X-HOWTO/",
+		     Topics => {
+			       },
+		    },
+		    {
+		     Title => "SSL Certificates HOWTO",
+		     URL => "http://www.tldp.org/HOWTO/SSL-Certificates-HOWTO/",
+		     Topics => {
+			       },
+		    },
+		    {
+		     Title => "Autograph INTEL paper",
+		     URL => "",
+		     Topics => {
+			       },
+		    },
+		   ],
+   Priorities => {
+		  "focus on systems integration" => 1,
+		  "solve important customer problems" => 1,
+		  "improve reliability improve usability" => 1,
+		  "make sure everything works" => 1,
+		  "know the customer problems" => 1,
+		  "solve the customer problems" => 1,
+		 },
+   Skills => {
+	      "stay on task (haven't done as good a job of that as possible)" => 1,
+	      "judge what may be relevant" => 1,
+	      "don't make the problem perfect or huge" => 1,
+	      "do the fast demo, product" => 1,
+	     },
+  );
+
+$UNIVERSAL::study->Execute();
