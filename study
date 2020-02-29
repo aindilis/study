@@ -4,8 +4,6 @@ use Study;
 
 $UNIVERSAL::study = Study->new
   (Interviewers => {
-		    "Jarod Go" => "CTO",
-		    "Aron Hall" => "CEO",
 		   },
    PedagogicalObjectives => {
 			     "openbsd install" => 1,
